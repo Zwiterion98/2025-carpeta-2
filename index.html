@@ -919,7 +919,7 @@ function buildDynamicProjects() {
       // Icon image
       const iconImg = document.createElement('img');
       const techData = project.techContent[techName];
-      iconImg.src = `icons/icon_${techName}.png`; // fallback
+      iconImg.src = `icons/icon_${techName.toLowerCase()}.png`; // fallback
       iconImg.alt = techName;
       icon.appendChild(iconImg);
 
@@ -1136,7 +1136,7 @@ function getElementBorderSide(element, point, container) {
     // if you have CSS transforms or transitions on iconDiv, that's fine
     const techInfo = proj.techContent[techName];
     const iconImg = document.createElement('img');
-    iconImg.src = `icons/icon_${techName}.png`;
+    iconImg.src = `icons/icon_${techName.toLowerCase()}.png`;
     iconImg.alt = techName;
     iconDiv.appendChild(iconImg);
     hoverContainer.appendChild(iconDiv);
@@ -1676,7 +1676,7 @@ function openProjectDetails(projectKey) {
   techs.forEach(t => {
     techIconsHTML += `
       <div class="tech-icon-card">
-        <img src="icons/icon_${t}.png" alt="${t}" />
+        <img src="icons/icon_${t.toLowerCase()}.png" alt="${t}" />
         <p class="font_outfit" style="position:relative; top:15px; color:black;">${t}</p>
       </div>
     `;
