@@ -210,7 +210,7 @@
     height: 60px;
     border-radius: 50%;
     background: url("projects/gonzalo/gonzalo.png") no-repeat center center/cover;
-    border: 2px solid #1e1e1e;
+    border: 2px solid #1e1e1e; 
   }
   .profile-text {
     line-height: 1.2;
