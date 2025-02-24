@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing - Inicio (Grid)</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward,chat,keyboard_arrow_up" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg
+  width="0"
+  height="0"
+  style="position: absolute;"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1309.39 842.14"
+>
+  <defs>
+    <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+      <path
+        transform="scale(0.0008, 0.0013)"
+        d="M1043.27,82.28h97.53c25.41,0,46,20.36,46,45.48v589.92c0,25.12-20.59,45.48-46,45.48H328.26c-25.41,0-46-20.36-46-45.48v-5.25c0-25.12-20.6-45.48-46-45.48H46.5c-25.41,0-46-20.36-46-45.48V45.98C.5,20.86,21.1.5,46.5.5h914.05c22.84,0,41.36,18.31,41.36,40.89s18.52,40.89,41.36,40.89Z"
+        fill="#000"
+        stroke="none"
+      />
+    </clipPath>
+  </defs>
+</svg>
+<svg width="0" height="0" style="position: absolute;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 719">
+  <defs>
+    <clipPath id="myClip2" clipPathUnits="objectBoundingBox">
+      <path 
+        transform="scale(0.00262, 0.00139)"
+        d="M311.017 69.0344H340C362.644 69.0344 381 87.3908 381 110.034V678C381 700.644 362.644 719 340 719H151.293C129.592 719 112 701.408 112 679.707C112 658.006 94.4078 640.414 72.7068 640.414H41C18.3563 640.414 0 622.057 0 599.414V41C0 18.3563 18.3563 0 41 0H241.983C261.046 0 276.5 15.4539 276.5 34.5172C276.5 53.5805 291.954 69.0344 311.017 69.0344Z" 
+        fill="#000" 
+        stroke="none"
+      />
+    </clipPath>
+  </defs>
+</svg>
+
+<!-- Back to Top button -->
+<div id="backToTopBtn">
+  <span class="material-symbols-outlined">keyboard_arrow_up</span>
+</div>
+
+
+<div id="top"></div>
+
+<div class="imagePortada"></div>
+
+<!-- Hero Container -->
+<div class="hero-container">
+  <!-- Nav -->
+  <div class="nav-container">
+    <div style="display: flex; align-items: center; gap: 1em;">
+      <div class="div_buttons_white border_black spaced">
+        <a class="button bg_black font_inter" href="#top">Feed</a>
+        <a class="button bg_white font_inter" href="#about">Sobre mi</a>
+        <a class="button bg_white font_inter" href="#projectsStart">Proyectos</a>
+      </div>
+      <div class="div_buttons_transparent">
+        <a class="button bg_none text-color_white border_white font_inter" href="#carousel">
+          Portfolio completo
+        </a>
+        <a class="button bg_none text-color_white border_white font_inter" href="#carousel">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+    <a class="button bg_purple font_inter" href="#contactForm">Contacto
+      <span class="material-symbols-outlined contacto-icono">
+        chat
+        </span>
+    </a>
+  </div>
+
+ 
+  <div class="text-container">
+    <div class="container-lateral">
+      <h1>IDEAS CONECTADAS</h1>
+      <div class="div_buttons_transparent">
+        <a class="bt_gallery button bg_white_2 text-color_purple border_white font_inter" href="#">CREATIVIDAD</a>
+        <a class="bt_gallery button bg_none text-color_white border_white font_inter" href="#">HERRAMIENTAS</a>
+        <a class="bt_gallery button bg_none text-color_white border_white font_inter" href="#">INNOVACIÓN</a>
+        <a class="bt_gallery button bg_none text-color_white border_white font_inter" href="#">DISEÑO</a>
+      </div>
+    </div>
+    <div class="container-lateral">
+      <div class="profile-container">
+        <div class="profile-image"></div>
+        <div class="profile-text font_inter">
+          <strong>Gonzalo Hernández</strong>
+          Diseño Multimedia <br />Técnico Creativo
+        </div>
+      </div>
+      <h2>RESULTADOS IMPACTANTES</h2>
+    </div>
+  </div>
+</div>
+
+<!-- Overlay for project details -->
+<div id="projectDetailsOverlay" class="details-overlay">
+  <!-- content is injected dynamically -->
+</div>
+
+<!-- “About” section => with the “Gonzalo Hernandez” project -->
+<div class="project-section" id="about">
+  <p class="font_inter mobile"
+  id="aboutMeParagraph" 
+  style="color: #1e1e1e; font-family: 'Inter', serif; margin-top: 2rem;">
+  </p>
+  <div class="project-container">
+    <div class="card center-card" data-project="Gonzalo Hernandez">
+      <div class="img-container">
+        <img src="projects/Gonzalo/gonzalo.png" alt="Gonzalo Hernandez">
+      </div>
+      <p></p>
+    </div>
+   
+    <div class="tech-icon icon-left-1" data-tech="Adobe">
+      <img src="icons/icon_adobe.png" alt="Adobe">
+    </div>
+    <div class="tech-icon icon-left-2" data-tech="UI">
+      <img src="icons/icon_ui.png" alt="Tech 2">
+    </div>
+    <div class="tech-icon icon-left-3" data-tech="8Wall">
+      <img src="icons/icon_8wall.png" alt="Tech 3">
+    </div>
+    <div class="tech-icon icon-left-4" data-tech="Figma">
+      <img src="icons/icon_figma.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-left-5" data-tech="Arduino">
+      <img src="icons/icon_arduino.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-left-6" data-tech="MongoDB">
+      <img src="icons/icon_mongodb.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-right-1" data-tech="SparkAR">
+      <img src="icons/icon_sparkAR.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-right-2" data-tech="Unity3D">
+      <img src="icons/icon_unity.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-right-3" data-tech="Meta">
+      <img src="icons/icon_meta.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-right-4" data-tech="Python">
+      <img src="icons/icon_python.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-right-5" data-tech="Javascript">
+      <img src="icons/icon_javascript.png" alt="Tech 4">
+    </div>
+    <div class="tech-icon icon-right-6" data-tech="Three.js">
+      <img src="icons/icon_threejs.png" alt="Tech 4">
+    </div>
+    <svg class="connection">
+      <g class="connections"></g>
+    </svg>
+  </div>
+</div>
+
+<!-- Container for dynamic projects + final contact section -->
+<div id="projects"></div>
+
+<div class="project-section" id="contact-section" style="height: auto;">
+  <div class="contact-container" style="background: #f4f4f4; height: auto;">
+    <h2 class="font_space-grotesk" style="color: #1e1e1e; font-size: 3rem; margin: 3rem;">
+      CONTACTO
+    </h2>
+    <form class="form" id="contactForm" style="position: relative; margin: 2rem;">
+      <input
+        class="input-text border_black font_inter text-color_black"
+        type="text"
+        name="name"
+        id="in_name"
+        placeholder="Nombre"
+        style="margin: 1rem; z-index: 1; width: 20vw; grid-row: 1; grid-column: 1;"
+      />
+      <input
+        class="input-text border_black font_inter text-color_black"
+        type="email"
+        name="email"
+        id="in_email"
+        placeholder="Email"
+        style="margin: 1rem; z-index: 1; width: 20vw; grid-row: 2; grid-column: 1;"
+      />
+      <input
+        class="input-text border_black font_inter text-color_black"
+        type="text"
+        name="subject"
+        id="in_subject"
+        placeholder="Asunto"
+        style="margin: 1rem; z-index: 1; width: 20vw; grid-row: 3; grid-column: 1;"
+      />
+      <textarea
+        class="input-textarea border_black font_inter text-color_black"
+        name="message"
+        id="in_message"
+        placeholder="Mensaje"
+        style="margin: 1rem; z-index: 1; width: 30vw; height: 12vw; grid-row: 1/4; grid-column: 2;"
+      ></textarea>
+
+      <button
+        class="button bg_black font_inter"
+        type="submit"
+        style="margin: 1rem; z-index: 1; grid-row: 4; grid-column: 2; justify-self: end;"
+      >
+        ENVIAR
+      </button>
+
+      <!-- SVG lines -->
+      <svg
+        class="form-connection"
+        style="
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%; height: 100%;
+          pointer-events: none;
+          z-index: 0;
+        "
+      >
+        <g class="form-lines"></g>
+      </svg>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer
+  class="footer-section"
+  style="
+    width: 100%;
+    background: #1e1e1e;
+    color: #f4f4f4;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  "
+>
+  <div style="margin: 0.5rem;">
+    <p class="font_inter" style="margin-bottom: 0.3rem;">GONZALO HERNÁNDEZ</p>
+    <p class="font_inter" style="margin-bottom: 0.3rem;">LIC. DISEÑO MULTIMEDIA</p>
+    <p class="font_inter">UNIVERSIDAD ORT URUGUAY</p>
+  </div>
+  <div style="margin: 0.5rem;">
+    <p class="font_inter" style="margin-bottom: 0.3rem;">201627</p>
+    <p class="font_inter" style="margin-bottom: 0.3rem;">GONZALOHERNANDEZ2112@GMAIL.COM</p>
+    <p class="font_inter">BEHANCE - GHERNANDEZ98</p>
+  </div>
+  <div style="margin: 0.5rem;">
+    <p class="font_inter" style="margin-bottom: 0.3rem;">2025</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
